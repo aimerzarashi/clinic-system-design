@@ -18,10 +18,10 @@ requirementDiagram
   element "文書・テンプレート" {
   }
 
-  "傷病名" - traces -> "患者プロファイル"
-  "傷病名" - traces -> "医事会計システム"
-  "傷病名" - traces -> "経緯・評価"
-  "傷病名" - derives -> "文書・テンプレート"
+  "傷病名" <- satisfies - "患者プロファイル"
+  "傷病名" <- satisfies - "医事会計システム"
+  "傷病名" <- satisfies - "経緯・評価"
+  "傷病名" <- satisfies - "文書・テンプレート"
 ```
 
 
